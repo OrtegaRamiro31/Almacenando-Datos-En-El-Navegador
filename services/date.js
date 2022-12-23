@@ -1,6 +1,5 @@
 export const uniqueDates = (tasks) => {
     const unique = [];
-    console.log(Object.values(tasks))
     tasks.forEach(task => {
         if(!unique.includes(task.dateFormat))  unique.push(task.dateFormat);
     });
