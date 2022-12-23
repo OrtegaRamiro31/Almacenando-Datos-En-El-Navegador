@@ -13,3 +13,9 @@ export const orderDates = (dates) => {
         return firstDate - secondDate;
     }); 
 }
+
+export const currentDate = () => {
+    const calendar = document.querySelector('[data-form-date]');
+    const today = new Date();
+    calendar.value = moment(today).format("YYYY-MM-DDTHH:mm");
+}

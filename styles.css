@@ -26,6 +26,13 @@ form {
   margin-bottom: 15px;
 }
 
+@media (max-width: 1200px){
+  form {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
 .mainCard {
   width: 40vw;
   border-radius: 25px;
@@ -49,6 +56,19 @@ form {
   width: 35%;
 }
 
+@media (max-width: 1200px){
+  .inputForm {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .inputCalendar {
+    width: 100%;
+  }
+}
+
 .inputForm::placeholder {
   padding: 0px;
 }
@@ -64,6 +84,12 @@ form {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .btnCreate {
+    margin: auto;
+  }
 }
 
 .cardsList {
@@ -87,6 +113,13 @@ form {
   align-content: center;
   margin: 5px 0px;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .task {
@@ -129,5 +162,18 @@ form {
 .date {
   width: 100%;
   padding: 15px;
-  
+  font-weight: 700;
+  /* border-bottom: 3px solid #f00; */
+}
+
+@media (max-width: 768px) {
+  .dateBox {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .dateBox {
+    flex-direction: row-reverse;
+  }
 }
